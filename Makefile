@@ -11,7 +11,7 @@ regen:
 # NOTE: adding v (verbose) flag for the beginning stage:
 ndkbuild:
 	rm -rf lib libs
-	ndk-build
+	/cygdrive/c/Users/alex/AppData/Local/Android/Sdk/ndk/26.1.10909125/ndk-build.cmd
 	zip sqlite-native-driver-libs.zip libs/*/*
 	mv libs lib
 	jar cf sqlite-native-driver.jar lib
