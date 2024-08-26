@@ -1,6 +1,10 @@
 C:\Users\alex\Documents\GitHub\Android-sqlite-native-driver
 Edit Android.mk
-Add LOCAL_LDFLAGS += "-Wl,-z,max-page-size=16384"
-cd C:\Users\alex\Documents\GitHub\Android-sqlite-native-driver with cygwin
-make init
-make
+Add LOCAL_LDFLAGS += "-Wl,-z,max-page-size=16384,-z,common-page-size=16384"
+Open cygwin
+	cd /cygdrive/c/Users/alex/Documents/GitHub/Android-sqlite-native-driver
+	make init
+	make
+
+
+* arm64-v8a non recompilé
