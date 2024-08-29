@@ -29,9 +29,10 @@ LOCAL_CFLAGS += -DSQLITE_ENABLE_RTREE
 LOCAL_CFLAGS += -DSQLITE_DEFAULT_PAGE_SIZE=1024
 LOCAL_CFLAGS += -DSQLITE_DEFAULT_CACHE_SIZE=2000
 
-# 08/08/2024 Android 15 : Add Page Size 16Kb support
+# 29/08/2024 Android 15 : Add Page Size 16Kb support
 # https://developer.android.com/guide/practices/page-sizes
 # https://source.android.com/docs/core/architecture/16kb-page-size/16kb
+APP_SUPPORT_FLEXIBLE_PAGE_SIZES := true
 LOCAL_LDFLAGS += "-Wl,-z,max-page-size=16384"
 
 LOCAL_SRC_FILES := ../native/sqlc_all.c
