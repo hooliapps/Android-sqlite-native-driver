@@ -1,3 +1,5 @@
+THIS IS A TEST !
+
 Notes to compile on Windows with Cygwin
 
 Edit Android.mk
